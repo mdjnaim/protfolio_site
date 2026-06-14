@@ -110,7 +110,7 @@ function TimelineCard({ item }) {
       }} />
 
       {/* Header */}
-      <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: "1rem", marginBottom: "16px" }}>
+      <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: "1rem", marginBottom: "16px", flexWrap: "wrap" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
           <div style={{
             width: "44px",
@@ -144,17 +144,21 @@ function TimelineCard({ item }) {
 
         {/* Duration + Location */}
         <div style={{ textAlign: "right", flexShrink: 0 }}>
-          <p style={{
-            background: `${item.color}15`,
-            border: `1px solid ${item.border}`,
-            color: item.color,
-            fontSize: "12px",
-            fontWeight: 600,
-            padding: "4px 12px",
-            borderRadius: "20px",
-            margin: "0 0 6px",
-            whiteSpace: "nowrap",
-          }}>{item.duration}</p>
+              <p style={{
+                background: `${item.color}15`,
+                border: `1px solid ${item.border}`,
+                color: item.color,
+                fontSize: "12px",
+                fontWeight: 600,
+                padding: "4px 12px",
+                borderRadius: "20px",
+                margin: "0 0 6px",
+                whiteSpace: "normal",
+                wordBreak: "break-word",
+                textAlign: "center",
+              }}>
+                {item.duration}
+              </p>
           <p style={{ color: "#6b6b8d", fontSize: "12px", margin: 0 }}>
             <i className="ti ti-map-pin" aria-hidden="true" style={{ fontSize: "12px", marginRight: "4px" }} />
             {item.location}
