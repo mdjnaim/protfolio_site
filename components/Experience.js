@@ -36,7 +36,7 @@ const education = [
     bg: "rgba(96,165,250,0.05)",
     icon: "ti-school",
     points: [
-      "GPA: 3.32 out of 4.00",
+      "GPA: 3.34 out of 4.00",
       "Specialized in software development and machine learning",
       "Completed projects in computer vision, NLP and web development",
       "IT Essential Certificate from CISCO Networking Academy",
